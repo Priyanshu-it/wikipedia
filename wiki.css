@@ -1,0 +1,261 @@
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #202122;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: auto;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Header styles */
+.header {
+    font-family:initial;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0px 2px 100px rgba(0, 0, 0, 0.1);
+}
+
+.img2 {
+    display: none;
+}
+
+.img1 {
+    margin-top: 20px;
+}
+
+/* Language section styles */
+.languages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+    padding: 17%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.languages a {
+    display: block;
+    padding: 10px;
+    color: #000dff;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.languages a:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.languages div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lang-list-button {
+    text-align: center;
+    padding: 1.5px 20px 6px 20px;
+    background-color: #ffffff;
+    border: 1px solid #333;
+    color: #0a15f0;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Search container styles */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 0 10px;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+    max-width: 450px;
+    width: 98%;
+}
+
+#searchInput {
+    flex-grow: 1;
+    padding: 9.9px;
+    font-size: 1.3rem;
+    border: 2px solid #0078d4;
+    border-right: none;
+    border-radius: 2px 0px 0px 2px;
+}
+
+#languageSelector {
+    padding: 12.3px;
+    font-size: 1.1rem;
+    border: 2px solid #0078d4;
+    border-left: none;
+}
+
+button {
+    padding: 10.1px 13px;
+    background-color: #0078d4;
+    border: 1px solid #0078d4;
+    color: white;
+    border-radius: 0px 2px 2px 0px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005a99;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #ffffff;
+    padding: 60px;
+    padding-bottom: 14px;
+    display: grid;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer .side {
+    width: 28%;
+    padding: 40px;
+}
+
+.footer .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.footer .projects div {
+    padding: 20px;
+    padding-left: 90px;
+    position: relative;
+}
+
+.footer .license {
+    text-align: center;
+    margin-top: 30px;
+    font-size: auto;
+}
+
+/* Very small screen adjustments (phones in portrait mode) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .header {
+        padding: 5px;
+        padding-left: 30px;
+        text-align: left;
+        width: 100%;
+    }
+
+    .img2 {
+        display: flex;
+        margin: 14px;
+    } 
+    
+    .img1 {
+        display: none;
+    }
+
+    /* Adjusting grid layout for the .apps section */
+    .apps {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        width: 100%;
+    }
+
+    /* Adjusting individual items within .apps section */
+    .apps img {
+        width: 100%;
+        height: 38px;
+    }
+
+    .footer .row .side {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        font-weight: 600;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Centering content in the body */
+    .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Ensure language section is centered */
+    .languages {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        padding: 20px;
+    }
+
+    .languages a {
+        font-size: 0.9rem;
+        padding: 6px;
+    }
+
+    /* Footer projects */
+    .footer .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer items (projects) centering */
+    .footer .projects div {
+        text-align: center;
+        padding: 0;
+    }
+}

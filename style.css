@@ -176,29 +176,40 @@ button:hover {
 
 /* Very small screen adjustments (phones in portrait mode) */
 @media (max-width: 480px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    p {
-        font-size: 1.5rem;
-        padding: 0;
-    }
-
     .header {
-        padding: 5px;
-        padding-left: 30px;
-        text-align: left;
-        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* Centers the items horizontally */
+        align-items: center;
+        /* Centers the items vertically */
+        text-align: center;
     }
 
     .img2 {
         display: flex;
-        margin: 14px;
-    } 
-    
+        /* Enables Flexbox layout */
+        margin-right: 8px;
+        /* Adds 15px space to the right of the element */
+    }
+
     .img1 {
         display: none;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 16px;
+        color: grey;
     }
 
     /* Adjusting grid layout for the .apps section */

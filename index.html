@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,14 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" />
+    <link href="wiki.css" rel="stylesheet" />
 </head>
+
 <body>
     <header class="header">
-        <img alt="Wikipedia globe logo" class="img2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/200px-Wikipedia-logo-v2.svg.png" 
-        width="50px">
+        <img alt="Wikipedia globe logo" class="img2"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/200px-Wikipedia-logo-v2.svg.png"
+            width="50px">
         <div class="text-container">
             <h1>WikipediA</h1>
             <p>The Free Encyclopedia</p>
@@ -59,14 +62,14 @@
     <section class="search-container">
         <form action="https://en.wikipedia.org/w/index.php" method="get" target="_blank">
             <input id="searchInput" name="search" placeholder="Search Wikipedia" type="text" required
-                aria-label="Search Wikipedia" />
-            <select name="language" id="languageSelector" aria-label="Select Language">
+                aria-label="Search Wikipedia" title="Search Wikipedia" />
+            <select name="language" id="languageSelector" aria-label="Select Language" title="Select a Language">
                 <option value="en">EN</option>
                 <!-- Add more languages as needed -->
             </select>
             <button type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
         </form>
-    </section>
+    </section>    
 
     <section class="search-container">
         <i class="lang-list-button">
@@ -78,33 +81,22 @@
     <footer class="footer">
         <div class="row">
             <div class="side">
-                <div class="download">
-                    <img alt="logo"
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Wikimedia_Foundation_logo_-_vertical.svg/768px-Wikimedia_Foundation_logo_-_vertical.svg.png"
-                        style="width: 70px;" />
-                    <p>It is hosted by the Wikimedia-Clone Foundation, a non-profit organization that also hosts a range
-                        of other projects.
-                        <a href="https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter"
-                            target="_blank"> <br>
-                            <span style="color: rgb(120, 200, 220); font-size: 300;"> You can support our work with a donation.</span>
+                <div class=" download">
+                    <img alt="Wikimedia Foundation logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Wikimedia_Foundation_logo_-_vertical.svg/768px-Wikimedia_Foundation_logo_-_vertical.svg.png" style="width: 70px;" />
+                    <p>It is hosted by the Wikimedia-Clone Foundation, a non-profit organization that also hosts a range of other projects.
+                        <a href="https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter" target="_blank"> <br>
+                            <span style="color: rgb(120, 200, 220);">You can support our work with a donation.</span>
                         </a>
                     </p>
                     <hr>
-                    <p><a href=""><img alt="logo"
-                                src="https://upload.wikimedia.org/wikipedia/commons/7/75/Wikipedia_mobile_app_logo.png"
-                                style="width: 40px;" /><br><i style="color: rgb(100, 100, 250);"> Download Wikipedia for Android or
-                                iOS</i></a></p>
-                    <p>Save your favorite articles to read offline, sync your reading lists across devices, and
-                        customize your reading experience with the official Wikipedia app.</p><br>
+                    <p><a href=""><img alt="Wikipedia mobile app logo" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Wikipedia_mobile_app_logo.png" style="width: 40px;" /><br><i style="color: rgb(100, 100, 250);"> Download Wikipedia for Android or iOS</i></a></p>
+                    <p>Save your favorite articles to read offline, sync your reading lists across devices, and customize your reading experience with the official Wikipedia app.</p><br>
                     <p class="apps">
                         <a href="https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob&pli=1">
-                            <img alt="Google Play Store badge" height="40"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/200px-Google_Play_Store_badge_EN.svg.png"
-                                width="120" /></a>
+                            <img alt="Google Play Store badge" height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/200px-Google_Play_Store_badge_EN.svg.png" width="120" /></a>
                         <a href="https://apps.apple.com/us/app/wikipedia/id324715238">
-                            <img alt="Apple App Store badge" height="40"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/3/3c/20170219160110%21Download_on_the_App_Store_Badge.svg/120px-Download_on_the_App_Store_Badge.svg.png"
-                                width="120" /></a> <br><hr><br>
+                            <img alt="Apple App Store badge" height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/archive/3/3c/20170219160110%21Download_on_the_App_Store_Badge.svg/120px-Download_on_the_App_Store_Badge.svg.png" width="120" /></a> <br>
+                        <hr><br>
                     </p>
                 </div>
             </div>
@@ -112,80 +104,61 @@
                 <div class="projects">
                     <div>
                         <a href="https://commons.wikimedia.org/" title="Commons - Free media collection">
-                            <img alt="Commons logo" height="50"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/50px-Commons-logo.svg.png"
-                                width="50" />
+                            <img alt="Commons logo" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/50px-Commons-logo.svg.png" width="50" />
                             Commons<br />Free media collection
                         </a>
                     </div>
                     <div>
                         <a href="https://en.wikibooks.org/" title="Wikibooks - Free textbooks">
-                            <img alt="Wikibooks logo" height="50"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/50px-Wikibooks-logo.svg.png"
-                                width="50" />
+                            <img alt="Wikibooks logo" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/50px-Wikibooks-logo.svg.png" width="50" />
                             Wikibooks<br />Free textbooks
                         </a>
                     </div>
                     <div>
                         <a href="https://en.wikiversity.org/" title="Wikiversity - Free learning resources">
-                            <img alt="Wikiversity logo" height="50"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/50px-Wikiversity-logo.svg.png"
-                                width="50" />
+                            <img alt="Wikiversity logo" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Wikiversity-logo.svg/50px-Wikiversity-logo.svg.png" width="50" />
                             Wikiversity<br />Free learning resources
                         </a>
                     </div>
                     <div>
                         <a href="https://en.wikisource.org/" title="Wikisource - Free content library">
-                            <img alt="Wikisource logo" height="50"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/50px-Wikisource-logo.svg.png"
-                                width="50" />
+                            <img alt="Wikisource logo" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/50px-Wikisource-logo.svg.png" width="50" />
                             Wikisource<br />Free content library
                         </a>
                     </div>
                     <div>
                         <a href="https://en.wikivoyage.org/" title="Wikivoyage - Free travel guide">
-                            <img alt="Wikivoyage logo" height="50"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/50px-Wikivoyage-Logo-v3-icon.svg.png"
-                                width="50" />
-                            Wikivoyage<br />Free travel guide
+                            <img alt="Wikivoyage logo" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/50px-Wikivoyage-Logo-v3-icon.svg.png" width="50" />
+                            Wikivoyage <br />Free travel guide
                         </a>
                     </div>
                     <div>
                         <a href="https://en.wikiquote.org/" title="Wikiquote - Free quote compendium">
-                            <img alt="Wikiquote logo" height="50"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/50px-Wikiquote-logo.svg.png"
-                                width="50" />
+                            <img alt="Wikiquote logo" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/50px-Wikiquote-logo.svg.png" width="50" />
                             Wikiquote<br />Free quote compendium
                         </a>
                     </div>
                     <div>
                         <a href="https://species.wikimedia.org/" title="Wikispecies - Free species directory">
-                            <img alt="Wikispecies logo" height="50"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/50px-Wikispecies-logo.svg.png"
-                                width="50" />
+                            <img alt="Wikispecies logo" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/50px-Wikispecies-logo.svg.png" width="50" />
                             Wikispecies<br />Free species directory
                         </a>
                     </div>
                     <div>
                         <a href="https://en.wiktionary.org/" title="Wiktionary - Free dictionary">
-                            <img alt="Wiktionary logo" height="50"
-                                src="https://www.wiktionary.org/portal/wiktionary.org/assets/img/Wiktionary-logo-tiles_2x.png"
-                                width="50" />
+                            <img alt="Wiktionary logo" height="50" src="https://www.wiktionary.org/portal/wiktionary.org/assets/img/Wiktionary-logo-tiles_2x.png" width="50" />
                             Wiktionary<br />Free dictionary
                         </a>
                     </div>
                     <div>
                         <a href="https://www.wikidata.org/" title="Wikidata - Free knowledge base">
-                            <img alt="Wikidata logo" height="50"
-                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/50px-Wikidata-logo.svg.png"
-                                width="50" />
+                            <img alt="Wikidata logo" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/50px-Wikidata-logo.svg.png" width="50" />
                             Wikidata<br />Free knowledge base
                         </a>
                     </div>
                     <div>
                         <a href="https://www.mediawiki.org/" title="MediaWiki - Free & open wiki software">
-                            <img alt="MediaWiki logo" height="50"
-                                src="https://www.mediawiki.org/static/images/icons/mediawikiwiki.svg" width="50" />
+                            <img alt="MediaWiki logo" height="50" src="https://www.mediawiki.org/static/images/icons/mediawikiwiki.svg" width="50" />
                             MediaWiki<br />Free &amp; open wiki software
                         </a>
                     </div>
@@ -205,6 +178,7 @@
         // Add event listener to the search button
         document.querySelector('button').addEventListener('click', function (event) {
             event.preventDefault(); // Prevent the default form behavior
+
             const searchName = document.getElementById('searchInput').value; // Get value from search input field
 
             if (searchName) {
@@ -218,3 +192,4 @@
     </script>
 </body>
 </html>
+<!-- line 195 -->

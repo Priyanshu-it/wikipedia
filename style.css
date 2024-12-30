@@ -77,70 +77,78 @@ p {
 }
 
 .lang-list-button {
-    text-align: center;
-    padding: 1.5px 20px 6px 20px;
-    background-color: #ffffff;
-    border: 1px solid #333;
+    display: flex;
     color: #0a15f0;
     text-decoration: none;
-    border-radius: 4px;
+    align-items: center;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.5rem 2rem;
     cursor: pointer;
+}
+
+.divider {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #ced4da;
+    margin: 0 10px;
 }
 
 /* Search Container Styles */
 .search-container {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 30px;
-    padding: 0 10px;
+    margin-top: 50px;
 }
 
 .search-container form {
     display: flex;
-    align-items: center;
-    max-width: 450px;
-    width: 98%;
+    border: 1px solid #ced4da;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    min-width: 30%;
 }
 
 /* Input Field */
 #searchInput {
+    border: none;
+    padding: 0.5rem;
     flex-grow: 1;
-    padding: 10px;
-    border: 2px solid #0078d4; /* Border color and thickness */
-    font-size: 1.3rem;
-    border-radius: 2px 0px 0px 2px; /* Rounded corners on the left */
-    border-right: none; /* Remove right border */
+    border: 2px solid #0078d4;
+    border-right: none;
 }
 
 #searchInput:focus, #languageSelector:focus {
     outline: none;
-    border-color: #005a99; /* Focused border color */
+    border-color: #005a99;
 }
 
 /* Language Selector */
 #languageSelector {
-    padding: 11.5px;
-    font-size: 1.3rem;
-    border: 2px solid #0078d4; /* Uniform border color */
-    border-left: none; /* Remove left border for seamless connection with input field */
-    border-right: none; /* Remove right border to keep it connected with button */
+    border: none;
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border: 2px solid #0078d4;
+    border-left: none;
+    border-right: none;
 }
 
 /* Search Button */
 button {
-    padding: 5px 12px;
-    background-color: #0078d4; /* Button background color */
-    color: white;
-    border: 2px solid #0078d4; /* Consistent border color */
+    padding: 0.5rem 1.2rem;
     font-size: 2rem;
-    border-radius: 0px 2px 2px 0px; /* Rounded corners on the right */
-    border-left: none; /* Remove left border */
-    cursor: pointer; /* Pointer cursor for interactivity */
+    color: white;
+    background-color: #3367d6;
+    border: 2px solid #0078d4;
+    border-radius: 0px 2px 2px 0px;
+    border: none;
+    cursor: pointer;
 }
 
 /* Button Hover Effect */
 button:hover {
-    background-color: #005a99; /* Darker shade on hover */
+    background-color: #005a99;
 }
 
 /* Footer styles */
@@ -248,6 +256,10 @@ button:hover {
         align-items: center;
         text-align: center;
         padding: 10px;
+    }
+
+    .search-container form {
+        width: 90%;
     }
 
     .languages {

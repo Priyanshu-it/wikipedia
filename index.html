@@ -186,7 +186,7 @@
                 const wikiUrl = `https://en.wikipedia.org/wiki/${encodeURIComponent(searchName)}`;
 
                 // Open the Wikipedia URL
-                window.href(wikiUrl, '_blank');
+                window.location.replace(wikiUrl);
             }
         });
     </script>

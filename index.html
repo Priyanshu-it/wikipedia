@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" />
+    <link href="wiki.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -71,10 +71,12 @@
     </section>    
 
     <section class="search-container">
-        <i class="lang-list-button">
-            <a href="https://meta.wikimedia.org/wiki/List_of_Wikipedias"><i class="material-icons">&#xe8e2;</i> Read
-                Wikipedia in your language <i class="glyphicon">&#xe114;</i></a>
-        </i>
+            <div class="divider"></div>
+            <div class="lang-list-button">
+                <a href="https://meta.wikimedia.org/wiki/List_of_Wikipedias"> <i class="material-icons">&#xe8e2;</i>
+                <span>Read Wikipedia in your language</span> <i class="glyphicon">&#xe114;</i> </a>
+            </div>
+            <div class="divider"></div>
     </section>
     <hr>
     <footer class="footer">
@@ -88,8 +90,7 @@
                         </a>
                     </p>
                     <hr>
-                    <p> <img alt="Wikipedia mobile app logo" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Wikipedia_mobile_app_logo.png" style="width: 40px;" /><br>
-                    <a href="https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications"><i style="color: rgb(100, 100, 250);"> Download Wikipedia for Android or iOS</i></a></p>
+                    <p><a href=""><img alt="Wikipedia mobile app logo" src="https://upload.wikimedia.org/wikipedia/commons/7/75/Wikipedia_mobile_app_logo.png" style="width: 40px;" /><br><i style="color: rgb(100, 100, 250);"> Download Wikipedia for Android or iOS</i></a></p>
                     <p>Save your favorite articles to read offline, sync your reading lists across devices, and customize your reading experience with the official Wikipedia app.</p><br>
                     <p class="apps">
                         <a href="https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob&pli=1">
@@ -178,7 +179,6 @@
         // Add event listener to the search button
         document.querySelector('button').addEventListener('click', function (event) {
             event.preventDefault(); // Prevent the default form behavior
-
             const searchName = document.getElementById('searchInput').value; // Get value from search input field
 
             if (searchName) {
